@@ -34,7 +34,6 @@ import org.spout.api.scheduler.Scheduler;
 
 /**
  * Represents the Spout core, to get singleton {@link Engine} instance
- *
  */
 public final class Spout {
 	private static Engine instance = null;
@@ -89,5 +88,16 @@ public final class Spout {
 	
 	public static FileSystem getFilesystem() {
 		return instance.getFilesystem();
+	}
+
+	public static void multilineLog(String multiline) {
+		String[] split = multiline.split("\n");
+		for (String line : split) {
+			while (line.length() > 40) {
+				instance.getLogger().info(line.substring(0, 40));
+				line = line.substring(40);
+			}
+			instance.getLogger().info(line);
+		}
 	}
 }
