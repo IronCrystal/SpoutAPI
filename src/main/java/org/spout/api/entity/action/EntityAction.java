@@ -26,7 +26,7 @@
  */
 package org.spout.api.entity.action;
 
-import org.spout.api.entity.component.controller.Controller;
+import org.spout.api.entity.component.Controller;
 import org.spout.api.entity.Entity;
 
 public abstract class EntityAction<T extends Controller> {

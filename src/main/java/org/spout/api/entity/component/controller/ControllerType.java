@@ -26,8 +26,8 @@
  */
 package org.spout.api.entity.component.controller;
 
-import org.spout.api.entity.component.controller.Controller;
-import org.spout.api.entity.component.controller.ControllerRegistry;
+import org.spout.api.entity.component.Controller;
+import org.spout.api.entity.component.ControllerRegistry;
 import org.spout.api.io.store.simple.MemoryStore;
 import org.spout.api.protocol.EntityProtocol;
 import org.spout.api.protocol.EntityProtocolStore;

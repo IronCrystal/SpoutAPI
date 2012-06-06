@@ -26,7 +26,7 @@
  */
 package org.spout.api.entity.component.controller.type;
 
-import org.spout.api.entity.component.controller.Controller;
+import org.spout.api.entity.component.Controller;
 import org.spout.api.entity.component.controller.ControllerType;
 
 /**

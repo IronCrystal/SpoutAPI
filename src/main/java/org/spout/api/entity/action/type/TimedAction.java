@@ -27,7 +27,7 @@
 package org.spout.api.entity.action.type;
 
 import org.spout.api.entity.action.EntityAction;
-import org.spout.api.entity.component.controller.Controller;
+import org.spout.api.entity.component.Controller;
 import org.spout.api.entity.Entity;
 
 public abstract class TimedAction<T extends Controller> extends EntityAction<T> {

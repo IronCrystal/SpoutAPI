@@ -33,7 +33,7 @@ import java.util.UUID;
 
 import org.spout.api.Engine;
 import org.spout.api.Source;
-import org.spout.api.entity.component.controller.Controller;
+import org.spout.api.entity.component.Controller;
 import org.spout.api.entity.Entity;
 import org.spout.api.entity.spawn.SpawnArrangement;
 import org.spout.api.entity.component.controller.ControllerType;

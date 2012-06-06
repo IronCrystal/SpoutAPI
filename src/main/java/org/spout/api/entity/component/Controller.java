@@ -24,7 +24,7 @@
  * License and see <http://www.spout.org/SpoutDevLicenseV1.txt> for the full license,
  * including the MIT license.
  */
-package org.spout.api.entity.component.controller;
+package org.spout.api.entity.component;
 
 import java.io.Serializable;
 import org.spout.api.datatable.DataMap;
@@ -32,6 +32,8 @@ import org.spout.api.datatable.DatatableMap;
 import org.spout.api.datatable.GenericDatatableMap;
 import org.spout.api.entity.Entity;
 import org.spout.api.entity.component.EntityComponent;
+import org.spout.api.entity.component.controller.ControllerType;
+import org.spout.api.entity.component.controller.PlayerController;
 import org.spout.api.geo.cuboid.Block;
 import org.spout.api.map.DefaultedMap;
 

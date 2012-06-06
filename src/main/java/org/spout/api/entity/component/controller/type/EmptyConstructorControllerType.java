@@ -29,7 +29,7 @@ package org.spout.api.entity.component.controller.type;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
-import org.spout.api.entity.component.controller.Controller;
+import org.spout.api.entity.component.Controller;
 import org.spout.api.entity.component.controller.ControllerType;
 
 /**

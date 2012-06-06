@@ -24,12 +24,15 @@
  * License and see <http://www.spout.org/SpoutDevLicenseV1.txt> for the full license,
  * including the MIT license.
  */
-package org.spout.api.entity.component.controller;
+package org.spout.api.entity.component;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.spout.api.entity.component.Controller;
+import org.spout.api.entity.component.controller.ControllerType;
 
 /**
  * Handles lookup of entity controller types.
