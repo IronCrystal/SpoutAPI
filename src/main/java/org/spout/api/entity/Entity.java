@@ -31,6 +31,7 @@ import java.util.UUID;
 import org.spout.api.Source;
 import org.spout.api.collision.CollisionModel;
 import org.spout.api.entity.component.EntityComponent;
+import org.spout.api.entity.component.controller.Controller;
 import org.spout.api.geo.World;
 import org.spout.api.geo.cuboid.Chunk;
 import org.spout.api.geo.cuboid.Region;

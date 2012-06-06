@@ -24,25 +24,38 @@
  * License and see <http://www.spout.org/SpoutDevLicenseV1.txt> for the full license,
  * including the MIT license.
  */
-package org.spout.api.entity.type;
+package org.spout.api.entity.component.controller;
 
-import org.spout.api.entity.Controller;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
- * @author zml2008
+ * Handles lookup of entity controller types.
  */
-public class UncreatableControllerType extends ControllerType {
-	public UncreatableControllerType(Class<? extends Controller> controllerClass, String name) {
-		super(controllerClass, name);
+public class ControllerRegistry {
+	private final static Map<String, ControllerType> nameLookup = new HashMap<String, ControllerType>();
+	private static final Map<Class<? extends Controller>, ControllerType> classLookup = new HashMap<Class<? extends Controller>, ControllerType>();
+
+	public static void register(ControllerType type) {
+		synchronized (classLookup) {
+			if (!classLookup.containsKey(type.getControllerClass())) {
+				classLookup.put(type.getControllerClass(), type);
+				nameLookup.put(type.getName().toLowerCase(), type);
+			}
+		}
 	}
 
-	@Override
-	public boolean canCreateController() {
-		return false;
+	public static ControllerType get(String name) {
+		return nameLookup.get(name.toLowerCase());
 	}
 
-	@Override
-	public Controller createController() {
-		return null;
+	public static ControllerType get(Class<? extends Controller> type) {
+		return classLookup.get(type);
+	}
+
+	public static Collection<ControllerType> getAll() {
+		return Collections.unmodifiableCollection(classLookup.values());
 	}
 }

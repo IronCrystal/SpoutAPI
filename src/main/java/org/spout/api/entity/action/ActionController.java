@@ -30,8 +30,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.spout.api.entity.Controller;
-import org.spout.api.entity.type.ControllerType;
+import org.spout.api.entity.component.controller.Controller;
+import org.spout.api.entity.component.controller.ControllerType;
 
 public abstract class ActionController extends Controller {
 	private List<EntityAction<Controller>> activeActions = new ArrayList<EntityAction<Controller>>();
